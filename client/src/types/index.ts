@@ -1,0 +1,1 @@
+export { type AiWeatherRequest, type CurrentWeather, type Coordinates, type WeatherResponse } from "@weathergpt/shared";

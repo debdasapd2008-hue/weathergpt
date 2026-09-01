@@ -1,0 +1,35 @@
+# Environment
+.env
+.env.local
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Test / coverage
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db.env
+.env.*
+!.env.example
+node_modules/
+dist/
+client_BEFORE_ROLLBACK/
+server_BEFORE_ROLLBACK/
+shared_BEFORE_ROLLBACK/
+server/data/*.db
+server/data/*.db-shm
+server/data/*.db
+server/data/*.db-shm
+server/data/*.db-wal

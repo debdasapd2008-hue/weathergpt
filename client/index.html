@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WeatherGPT — modern weather forecasts with an AI assistant." />
+    <meta name="theme-color" content="#f5f3eb" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%230d9488%22/><path d=%22M28 62 C22 62 18 58 18 53 C18 47 23 44 28 44 C30 36 38 31 46 32 C52 33 56 37 58 42 C65 42 70 47 70 54 C70 61 64 65 57 65 L30 65 Z%22 fill=%22white%22/%3E<circle cx=%2266%22 cy=%2234%22 r=%2210%22 fill=%22%23f5d35b%22/%3E</svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>WeatherGPT</title>
+    <script>
+      try {
+        var theme = localStorage.getItem("weathergpt-theme");
+        var dark =
+          theme === "dark" ||
+          (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        if (dark) document.documentElement.classList.add("dark");
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
